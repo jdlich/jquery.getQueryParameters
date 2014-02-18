@@ -1,3 +1,10 @@
+/*
+ *  jquery.getQueryParameters.js
+ *  Copyright (c) 2014 Nicholas Ortenzio
+ *  The MIT License (MIT)
+ *  
+ */
+ 
 jQuery.extend({
 
   getQueryParameters : function(str) {		
