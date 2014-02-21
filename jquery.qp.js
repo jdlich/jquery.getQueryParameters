@@ -1,14 +1,10 @@
 /*
- *  jquery.getQueryParameters.js
+ *  getQueryParameters.js
  *  Copyright (c) 2014 Nicholas Ortenzio
  *  The MIT License (MIT)
  *
  */
 
-jQuery.extend({
-
-  getQueryParameters : function(str) {
-	  return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
-  }
-
-});
+window.getQueryParameters = function(str) {
+  return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
+}
